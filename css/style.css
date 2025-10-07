@@ -102,7 +102,7 @@ overflow: visible;
     position: relative;
     top:60px;
     height: 350px;
-    width: 400px;
+    max-width: 100%;
     padding: 40px;
     z-index:100;
     animation: slideInFromRight 1s ease-in;
@@ -320,6 +320,7 @@ margin: 20px 0;
 }
 .features-head,
 .features-sub-head,
+.footer .grid,
 .docs-head{
     text-align: center;
 }
@@ -336,8 +337,29 @@ margin: 20px 0;
     grid-template-columns: 1fr; 
     padding: 15px;
   }
-
+ .languages .flex{
+    justify-content: center;
+    grid-column: 1;
+ }
+.features-head .grid,
+.feature-sub-head .grid,
+.docs-head .grid,
+.footer .grid,
+.cloud .grid {
+  grid-template-columns: 1fr;
 }
+
+
+  .footer .social {
+    margin-top: 1rem;
+  }
+
+  .footer .social a {
+    margin: 0 8px;
+  }
+}
+
+
 
 
 /*MOBILE*/
@@ -354,7 +376,6 @@ margin: 20px 0;
     padding: 10px;
     background-color: rgba(0,0,0,0.1);
 }
-
 
 
 }
